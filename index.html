@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Last Colony</title>
+        <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/game.js" type="text/javascript" charset="utf-8"></script>
+        <link rel="stylesheet" href="styles.css"  type = "text/css" media="screen" charset="utf-8">
+
+    </head>
+    <body>
+        <div id="gamecontainer">
+            <div id="gamestartscreen" class="gamelayer">
+                <span id = "singleplayer" onclick="singleplayer.start();">Campaign</span>
+                <span id = "multiplayer" onclick="multiplayer.start();">Multiplayer</span>
+            </div>
+            <div id="loadingscreen" class="gamelayer">
+                <div id="loadingmessage"></div>
+            </div>
+        </div>
+    </body>
+</html>
