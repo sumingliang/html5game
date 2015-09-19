@@ -71,11 +71,14 @@ var loader = {
     itemLoaded:function() {
         // body...
         loader.loadedCount++;
+        console.log("loader.loadedCount " +loader.loadedCount);
+        console.log("loader.totalCount " +loader.totalCount);
         $('#loadingmessage').html('Loaded ' + loader.loadedCount + 'of '+loader.totalCount);
-        if (loader.loadedCount === loader.totalCount)
+        if (loader.loadedCount == loader.totalCount)
         {
+            console.log("loader.loadedCount " +loader.loaded);
             loader.loaded = true;
-            $('loadingscreen').hide();
+            $('#loadingscreen').hide();
             if(loader.onload)
             {
                 loader.onload();

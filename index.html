@@ -5,14 +5,23 @@
         <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/game.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/singleplayer.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/maps.js" type="text/javascript" charset="utf-8"></script>
         <link rel="stylesheet" href="styles.css"  type = "text/css" media="screen" charset="utf-8">
 
     </head>
     <body>
         <div id="gamecontainer">
             <div id="gamestartscreen" class="gamelayer">
-                <span id = "singleplayer" onclick="singleplayer.start();">Campaign</span>
-                <span id = "multiplayer" onclick="multiplayer.start();">Multiplayer</span>
+	            <span id="singleplayer" onclick = "singleplayer.start();">Campaign</span><br>
+                <span id = "multiplayer" onclick="multiplayer.start();">Multiplayer</span><br>
+            </div>
+            <div id="missionscreen" class="gamelayer">
+                <input type="button" id="entermission" onclick="singleplayer.play();">
+                <input type="button" id="exitmission" onclick="singleplayer.exit();">
+                <div id="missonbriefing">
+				Welcome to your first mission.
+	            </div>
             </div>
             <div id="loadingscreen" class="gamelayer">
                 <div id="loadingmessage"></div>

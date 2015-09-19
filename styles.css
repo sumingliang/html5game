@@ -20,9 +20,9 @@
     height: 160px;
 }
 
-#gamestartscreen span{
-    margin: 20px;
-    font-family: 'Curier New',Courier,monospace;
+#gamestartscreen span {
+    margin:20px;
+    font-family: ‘Courier New’, Courier, monospace;
     font-size: 48px;
     cursor:pointer;
     color: white;
@@ -45,4 +45,49 @@
     color: white;
     background: url(images/loader.gif) no-repeat center;
     font: 12px Arial;
+}
+#missionscreen {
+    background: url(images/missionscreen.png) no-repeat;
+}
+#missionscreen #entermission{
+    position: absolute;
+    top:79px;
+    left:6px;
+    width: 246px;
+    height: 68px;
+    border-width: 0px;
+    background-image: url(images/buttons.png);
+    background-position: 0px 0px;
+}
+#missionscreen #entermission:disabled,#missionscreen #entermission:active{
+    background-image: url(images/buttons.png);
+    background-position: -251px 0px;
+}
+
+#missionscreen #exitmission {
+    position: absolute;
+    top:79px;
+    left: 380px;
+    width: 98px;
+    height: 68px;
+    border-width: 0px;
+    background-image: url(images/buttons.png);
+    background-position: 0px -76px;
+}
+
+#missionscreen #exitmission:disabled,#missionscreen #exitmission:active{
+    background-image: url(images/buttons.png);
+    background-position: -103px -76px;
+}
+
+#missionscreen #missonbriefing{
+    position: absolute;
+    padding: 10px;
+    top: 160px;
+    left: 20px;
+    width: 410px;
+    height: 300px;
+    color: rgb(130, 150, 162);
+    font-size: 13px;
+    font-family: 'Courier New',Courier, monospace;
 }
